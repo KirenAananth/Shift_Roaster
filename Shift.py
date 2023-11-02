@@ -24,7 +24,7 @@ def telegram_notification(msg_data):
 def g_data():
     # Replace 'YOUR_CREDENTIALS_FILE.json' with the path to your downloaded JSON credentials file.
     scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
-    credentials = ServiceAccountCredentials.from_json_keyfile_name('/Users/kiaananth/Documents/vscode/shift_notify/servicekey.json', scope)
+    credentials = ServiceAccountCredentials.from_json_keyfile_name('/var/jenkins_home/workspace/Shift_1/servicekey.json', scope)
     client = gspread.authorize(credentials)
     print(credentials)
 
